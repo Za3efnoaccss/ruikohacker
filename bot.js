@@ -12,11 +12,7 @@ const namee = "HJACKED" // اسم ابوت بعد التهكير //the bot name
 const playing = "HJACKED 1 SERVER" // البلاينج //bot streaming
 const role = 'HJACKED' // اسم الرتبه يلي بيسويها //the role name
 const adminstrator = 'OP' //اسم الرتبه يلي بيسويها البوت ويعطيك اياها //the op name
-console.log('BY OROCHIX');
-console.log('Start Hacking System ..')
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag} !`);
-  console.log(`Done The Hacking System Has Been Started`)
 
 });
 client.on('ready',  () => {
