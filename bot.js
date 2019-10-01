@@ -1,5 +1,3 @@
-//ENJOY
-//Sorry For The Bad Engilsh :/
 //By xxxRevenge (Bowlingtoolkit)
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
