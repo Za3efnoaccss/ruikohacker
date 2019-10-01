@@ -11,15 +11,5 @@ client.on('message', message => {
   	}
 });
 
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'Learning English',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/"
-        }
-    });
-});
-
+// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
