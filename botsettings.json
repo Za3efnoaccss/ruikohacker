@@ -1,4 +1,4 @@
 {
-	"token": "BOT_TOKEN",
+	"procress.env": "BOT_TOKEN",
 	"prefix": "!"
 }
