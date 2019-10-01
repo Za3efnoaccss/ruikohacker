@@ -15,7 +15,7 @@ client.on('message',async message => {
   if(message.author.bot){ return; }
 
 let keyword = ['สวัสดี','หวัดดี','ดีคับ','ดีค่ะ','ดีคร้าบบ','ดีจ้าา','ดีครับ']; //คำถามจากคน
-let answer = ['<:GWmiyanoBird:398867382325739520> ']; //คำตอบบอท
+let answer = ['ควย']; //คำตอบบอท
 if(keyword.some(word => message.content.includes(word))){
    message.reply(answer[Math.floor(Math.random()*answer.length)]);
 
