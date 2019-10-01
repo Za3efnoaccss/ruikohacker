@@ -11,5 +11,12 @@ client.on('message', message => {
   	}
 });
 
-// THIS  MUST  BE  THIS  WAY
+var memberCount = (guild.members.filter(member => !member.user.bot).size).toString() + ‘ Members’;
+
+});
+
+bot.user.setPresence({ game: { name: memberCount}});
+
+});
+
 client.login(process.env.BOT_TOKEN);
