@@ -11,12 +11,4 @@ client.on('message', message => {
   	}
 });
 
-var memberCount = (guild.members.filter(member => !member.user.bot).size).toString() + ‘ Members’;
-
-});
-
-bot.user.setPresence({ game: { name: memberCount}});
-
-});
-
 client.login(process.env.BOT_TOKEN);
