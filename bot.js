@@ -472,4 +472,4 @@ let op = message.guild.roles.find('name', `${adminstrator}`)
     message.guild.member(member).addRole(op);
   }
 });
-bot.login(botSettings.token);
+bot.login(botSettings.procress.env);
